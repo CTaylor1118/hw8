@@ -1,0 +1,13 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  fname: Dasdfwn
+  lname: Smitsdh
+  email: Dasfaawn@smsdfith.com
+  thumbnail: asdfasdawn.png
+
+two:
+  fname: Joasdhn
+  lname: Doasdfe
+  email: Joasdhn@doasdfe.com
+  thumbnail: sfdasdfjohn.png

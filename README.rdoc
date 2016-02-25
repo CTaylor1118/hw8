@@ -1,0 +1,18 @@
+== README
+Testing specifications:
+  types:
+    title:string 
+    description:string
+    issue_type: interger
+    priority: integer
+    status: integer
+  content:
+    title: not blank
+    description: not blank
+    issue_type: valid enumeration
+    priority: valid enumeration
+    status: valid enumeration
+  defaults:
+    issue_type, default = feature
+    priority, default = medium.
+    status, default = open.
