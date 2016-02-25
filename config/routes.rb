@@ -1,4 +1,7 @@
 Rails.application.routes.draw do
+  get 'bugs/index'
+  # You can have the root of your site routed with "root"
+  root 'bugs#index'
   resources :users
   resources :bugs
   # The priority is based upon order of creation: first created -> highest priority.
