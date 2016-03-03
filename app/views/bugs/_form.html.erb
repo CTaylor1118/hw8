@@ -18,8 +18,8 @@
     #{u.fname}", u.id]},
     selected: (@bug.user ? @bug.user.id : User.first.id || '')),
     {} %>
+    <%= link_to 'New User', new_user_path %>
   </div>
-  <%= link_to 'New User', new_user_path %>
   <div class="field">
     <%= f.label :title %><br>
     <%= f.text_field :title %>

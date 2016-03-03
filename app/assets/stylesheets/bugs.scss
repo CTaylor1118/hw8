@@ -1,3 +1,35 @@
 // Place all the styles related to the bugs controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+.bugs {
+  table {
+    width: 100%;
+    text-align: left;
+
+    thead {
+      font-size: medium;
+    }
+  }
+
+  .bug {
+    margin-bottom: 20px;
+  }
+
+  .bug_title {
+    font-size: 110%;
+    font-weight: bold;
+  }
+
+  .bug_info {
+    font-style: italic;
+  }
+
+  .user {
+    font-weight: normal;
+  }
+
+  .bug_text {
+    width: 75%;
+    margin-top: 5px;
+  }
+}

@@ -1,0 +1,94 @@
+/* line 1, /Users/christophertaylor/Documents/CIS658/rails-projects/hw6/app/assets/stylesheets/application.scss */
+#banner {
+  background: #084C61;
+  padding: 10px;
+  border-bottom: 2px solid;
+  font: small-caps 40px/40px "Times New Roman", serif;
+  color: #e0e0e0;
+  text-align: center;
+}
+/* line 8, /Users/christophertaylor/Documents/CIS658/rails-projects/hw6/app/assets/stylesheets/application.scss */
+#banner img {
+  float: left;
+}
+
+/* line 13, /Users/christophertaylor/Documents/CIS658/rails-projects/hw6/app/assets/stylesheets/application.scss */
+#notice {
+  color: #DB504A !important;
+  border: 2px solid red;
+  padding: 1em;
+  margin-bottom: 2em;
+  background-color: #f0f0f0;
+  font: bold smaller sans-serif;
+}
+
+/* line 22, /Users/christophertaylor/Documents/CIS658/rails-projects/hw6/app/assets/stylesheets/application.scss */
+.btn {
+  -webkit-border-radius: 28;
+  -moz-border-radius: 28;
+  border-radius: 28px;
+  font-family: Arial;
+  color: #084C61;
+  font-size: 18px;
+  background: #084C61;
+  padding: 10px 20px 10px 20px;
+  text-decoration: none;
+  float: right;
+  margin-bottom: 10px;
+}
+
+/* line 36, /Users/christophertaylor/Documents/CIS658/rails-projects/hw6/app/assets/stylesheets/application.scss */
+.btn a:link {
+  color: #56A3A6;
+  text-decoration: none;
+}
+
+/* line 41, /Users/christophertaylor/Documents/CIS658/rails-projects/hw6/app/assets/stylesheets/application.scss */
+.btn a:visited {
+  color: #DB504A;
+  text-decoration: none;
+}
+
+/* line 46, /Users/christophertaylor/Documents/CIS658/rails-projects/hw6/app/assets/stylesheets/application.scss */
+.btn a:active {
+  color: #56A3A6;
+  text-decoration: none;
+}
+
+/* line 51, /Users/christophertaylor/Documents/CIS658/rails-projects/hw6/app/assets/stylesheets/application.scss */
+.btn:hover {
+  background: #4F6D7A;
+  text-decoration: none;
+}
+
+/* line 56, /Users/christophertaylor/Documents/CIS658/rails-projects/hw6/app/assets/stylesheets/application.scss */
+#columns {
+  background: #4F6D7A;
+  width: 100%;
+}
+/* line 60, /Users/christophertaylor/Documents/CIS658/rails-projects/hw6/app/assets/stylesheets/application.scss */
+#columns #main {
+  margin-left: 17em;
+  padding: 1em;
+  background: #EFEFEF;
+}
+/* line 66, /Users/christophertaylor/Documents/CIS658/rails-projects/hw6/app/assets/stylesheets/application.scss */
+#columns #side {
+  float: left;
+  padding: 1em 2em;
+  width: 13em;
+  background: #4F6D7A;
+}
+/* line 71, /Users/christophertaylor/Documents/CIS658/rails-projects/hw6/app/assets/stylesheets/application.scss */
+#columns #side ul {
+  padding: 0;
+}
+/* line 73, /Users/christophertaylor/Documents/CIS658/rails-projects/hw6/app/assets/stylesheets/application.scss */
+#columns #side ul li {
+  list-style: none;
+}
+/* line 75, /Users/christophertaylor/Documents/CIS658/rails-projects/hw6/app/assets/stylesheets/application.scss */
+#columns #side ul li a {
+  color: #EFEFEF;
+  font-size: medium;
+}
