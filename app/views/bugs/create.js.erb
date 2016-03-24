@@ -1,0 +1,5 @@
+$('#bugs').empty()
+$('#bugs').html("<%= j (render @bugs) %>");
+$('#bug-form').slideUp(350);
+$('#current_bug:nth-child(odd)').css({'background-color' : '#88ff88'}).animate({'background-color': '#CCCCCC'}, 1000);
+$('#current_bug:nth-child(even)').css({'background-color' : '#88ff88'}).animate({'background-color': '#EFEFEF'}, 1000);

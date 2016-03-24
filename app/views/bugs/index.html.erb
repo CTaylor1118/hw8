@@ -13,80 +13,13 @@
       <th colspan="3"></th>
     </tr>
   </thead>
-  <tbody>
-    <% @bugs.each do |bug| %>
-      <tr class="bug">
-        <td>
-          <div class="bug_title"> <%= bug.title %> </div>
-            <div class="bug_info">
-              <span class="date"> <%= bug.updated_at.to_formatted_s(:long_ordinal)
-              %> </span>
-              <span class="user"> Reported by <%= (bug.user.try(:fname) || "NA") + " " + (bug.user.try(:lname) || "") %> 
-              </span>
-            </div>
-            <div class="bug_text"> <%= bug.description %> </div>
-          </div>
-        </td>
-        <td>
-          <span class="type"> <%= bug.issue_type %>  </span>
-        </td>
-        <td>
-          <span class="priority"> <%= bug.priority %>  </span>
-        </td>
-        <td>
-          <span class="status"> <%= bug.status %>  </span>
-        </td>
-        <td>
-          <span class="status actions"> <%= link_to 'Show', bug %>  </span>
-        </td>
-        <td>
-          <span class="status actions"> <%= link_to 'Edit', edit_bug_path(bug) %>  </span>
-        </td>
-        <td>
-          <span class="status actions"> <%= link_to 'Destroy', bug, method: :delete, data: { confirm: 'Are you sure?' } %>  </span>
-        </td>
-      </tr>
-    <% end %>
+  <tbody id="bugs">
+    <%= render @bugs %>
   </tbody>
 </table>
 
 <span class="btn">
-  <%= link_to 'New Bug', new_bug_path %>
+  <%= link_to 'New Bug', new_bug_path, remote: true  %>
 </span>
 
-<% if false %>
-<table>
-  <thead>
-    <tr>
-      <th>User</th>
-      <th>Title</th>
-      <th>Description</th>
-      <th>Issue type</th>
-      <th>Priority</th>
-      <th>Status</th>
-      <th colspan="3"></th>
-    </tr>
-  </thead>
-
-  <tbody>
-    <% @bugs.each do |bug| %>
-      <tr>
-        <td><%= (bug.user.try(:fname) + ' ' + bug.user.try(:lname) || "NA") %></td>
-        <td><%= bug.title %></td>
-        <td><%= bug.description %></td>
-        <td><%= bug.issue_type %></td>
-        <td><%= bug.priority %></td>
-        <td><%= bug.status %></td>
-        <td><%= link_to 'Show', bug %></td>
-        <td><%= link_to 'Edit', edit_bug_path(bug) %></td>
-        <td><%= link_to 'Destroy', bug, method: :delete, data: { confirm: 'Are you sure?' } %></td>
-      </tr>
-    <% end %>
-  </tbody>
-</table>
-
-<br>
-
-<%= link_to 'New Bug', new_bug_path %> |
-<%= link_to 'List Users', users_path %>
-<% end %>
+<div id="bug-form" style="display:none;"></div>
